@@ -57,7 +57,6 @@
           data-js-date-format="<?= $this->app->getJsDateFormat() ?>"
           data-js-time-format="<?= $this->app->getJsTimeFormat() ?>"
     >
-
     <?php if (isset($no_layout) && $no_layout): ?>
         <?= $this->app->flashMessage() ?>
         <?= $content_for_layout ?>

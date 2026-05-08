@@ -10,13 +10,13 @@ services:
      - "80:80"
      - "443:443"
     volumes:
+     - ./app:/var/www/app/app
+     - ./assets:/var/www/app/assets
      - data:/var/www/app/data
-     - plugins:/var/www/app/plugins
+     - ./plugins:/var/www/app/plugins
      - certs:/etc/nginx/ssl
 volumes:
   data:
-    driver: local
-  plugins:
     driver: local
   certs:
     driver: local
